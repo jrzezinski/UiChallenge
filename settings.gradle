@@ -1,0 +1,3 @@
+rootProject.name = 'UiChallenge'
+
+include 'UiChallengeSpring', 'UiChallengeAngular'
