@@ -32,7 +32,20 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n  <app-navigation></app-navigation>\n  <app-hello-world></app-hello-world>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\r\n  <app-navigation></app-navigation>\r\n  <router-outlet></router-outlet>\r\n</div>\r\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/get/get.component.html":
+/*!******************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/get/get.component.html ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <title>Navigation Bar</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css\">\n</head>\n\n  <body>\n    App name: {{ appName}}\n    time: {{ currentTime }}\n  </body>\n</html>\n");
 
 /***/ }),
 
@@ -45,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>hello-world</title>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css\">\n  </head>\n\n  <body class=\"text-center\">\n    <h1>Hello World Challenge</h1>\n    <br />\n    <label>Enter your name: <input type=\"text\" ngModel=\"name\"></label>\n    <br />\n    <br />\n    <p>Hello, {{ name }}</p>\n  </body>\n</html>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <title>hello-world</title>\r\n    <meta charset=\"utf-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css\">\r\n  </head>\r\n\r\n  <body class=\"text-center\">\r\n    <h1>Hello World Challenge</h1>\r\n    <br />\r\n    <label>Enter your name: <input type=\"text\" [(ngModel)]=\"name\"></label>\r\n    <br />\r\n    <br />\r\n    <p>Hello, {{name}}</p>\r\n  </body>\r\n</html>\r\n");
 
 /***/ }),
 
@@ -58,7 +71,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Navigation Bar</title>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css\">\n  </head>\n\n  <body>\n    <nav class=\"navbar navbar-inverse\">\n      <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n          <a class=\"navbar-brand\" href=\"#\">Challenges</a>\n        </div>\n        <ul class=\"nav navbar-nav\">\n          <li class=\"active\"><a href=\"#\">Hello World</a></li>\n          <li><a href=\"#\">GET</a></li>\n          <li><a href=\"#\">POST</a></li>\n        </ul>\n      </div>\n    </nav>\n  </body>\n</html>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <title>Navigation Bar</title>\r\n    <meta charset=\"utf-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css\">\r\n  </head>\r\n\r\n  <body>\r\n    <nav class=\"navbar navbar-inverse\">\r\n      <div class=\"container-fluid\">\r\n        <div class=\"navbar-header\">\r\n          <a class=\"navbar-brand\" href=\"#\">Challenges</a>\r\n        </div>\r\n        <ul class=\"nav navbar-nav\">\r\n          <li><a routerLink=\"/hello-world\">Hello World</a></li>\r\n          <li><a routerLink=\"/get\">GET</a></li>\r\n          <li><a routerLink=\"/post\">POST</a></li>\r\n        </ul>\r\n      </div>\r\n    </nav>\r\n  </body>\r\n</html>\r\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/post/post.component.html":
+/*!********************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/post/post.component.html ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <title>post challenge</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css\">\n</head>\n\n<body class=\"text-center\">\n<h1>Post challenge</h1>\n<br />\n<label>Enter the radius of your circle: <input type=\"number\" [(ngModel)]=\"radius\"> <button (click)=\"getCircumference(radius)\">Calculate</button> </label>\n<br />\n<br />\n<p>The circumference is: {{circumference}}</p>\n</body>\n</html>\n");
 
 /***/ }),
 
@@ -351,12 +377,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _navigation_navigation_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./navigation/navigation.component */ "./src/app/navigation/navigation.component.ts");
 /* harmony import */ var _hello_world_hello_world_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./hello-world/hello-world.component */ "./src/app/hello-world/hello-world.component.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _get_get_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./get/get.component */ "./src/app/get/get.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _post_post_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./post/post.component */ "./src/app/post/post.component.ts");
 
 
 
 
 
 
+
+
+
+
+const appRoutes = [
+    {
+        path: 'hello-world',
+        component: _hello_world_hello_world_component__WEBPACK_IMPORTED_MODULE_5__["HelloWorldComponent"]
+    },
+    {
+        path: 'get',
+        component: _get_get_component__WEBPACK_IMPORTED_MODULE_7__["GetComponent"]
+    },
+    {
+        path: 'post',
+        component: _post_post_component__WEBPACK_IMPORTED_MODULE_9__["PostComponent"]
+    },
+    {
+        path: '',
+        component: _hello_world_hello_world_component__WEBPACK_IMPORTED_MODULE_5__["HelloWorldComponent"],
+        pathMatch: 'full'
+    }
+];
 let AppModule = class AppModule {
 };
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -364,15 +417,74 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         declarations: [
             _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
             _navigation_navigation_component__WEBPACK_IMPORTED_MODULE_4__["NavigationComponent"],
-            _hello_world_hello_world_component__WEBPACK_IMPORTED_MODULE_5__["HelloWorldComponent"]
+            _hello_world_hello_world_component__WEBPACK_IMPORTED_MODULE_5__["HelloWorldComponent"],
+            _get_get_component__WEBPACK_IMPORTED_MODULE_7__["GetComponent"],
+            _post_post_component__WEBPACK_IMPORTED_MODULE_9__["PostComponent"]
         ],
         imports: [
-            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"]
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"].forRoot(appRoutes)
         ],
         providers: [],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
     })
 ], AppModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/get/get.component.css":
+/*!***************************************!*\
+  !*** ./src/app/get/get.component.css ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2dldC9nZXQuY29tcG9uZW50LmNzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/get/get.component.ts":
+/*!**************************************!*\
+  !*** ./src/app/get/get.component.ts ***!
+  \**************************************/
+/*! exports provided: GetComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GetComponent", function() { return GetComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let GetComponent = class GetComponent {
+    constructor(httpClient) {
+        this.httpClient = httpClient;
+    }
+    ngOnInit() {
+        this.httpClient.get("/app-time").subscribe(data => {
+            this.appName = data[0];
+            this.currentTime = data[1];
+        });
+    }
+};
+GetComponent.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+GetComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-get',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./get.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/get/get.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./get.component.css */ "./src/app/get/get.component.css")).default]
+    })
+], GetComponent);
 
 
 
@@ -463,6 +575,62 @@ NavigationComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./navigation.component.css */ "./src/app/navigation/navigation.component.css")).default]
     })
 ], NavigationComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/post/post.component.css":
+/*!*****************************************!*\
+  !*** ./src/app/post/post.component.css ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Bvc3QvcG9zdC5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/post/post.component.ts":
+/*!****************************************!*\
+  !*** ./src/app/post/post.component.ts ***!
+  \****************************************/
+/*! exports provided: PostComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostComponent", function() { return PostComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let PostComponent = class PostComponent {
+    constructor(httpClient) {
+        this.httpClient = httpClient;
+    }
+    ngOnInit() {
+    }
+    getCircumference(radius) {
+        this.httpClient.post("/circumference", radius).subscribe(data => {
+            this.circumference = parseFloat(data.toString());
+        });
+    }
+};
+PostComponent.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+PostComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-post',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./post.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/post/post.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./post.component.css */ "./src/app/post/post.component.css")).default]
+    })
+], PostComponent);
 
 
 
